@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import EmployeeForm from './components/EmployeeForm';
+import EmployeeList from './components/EmployeeList';
 
 function App() {
   const [employees, setEmployees] = useState(() => {
@@ -32,19 +33,7 @@ useEffect(() => {
     <div className="App">
       <EmployeeForm addEmployee={addEmployee} />
 
-      <h2>Employee List</h2>
-
-      {employees.length === 0 ? (
-        <p>No employees added yet.</p>
-      ) : (
-        <ul>
-          {employees.map((employee) => (
-            <li key={employee.id}>
-              {employee.name} - {employee.email} - {employee.title} - {employee.department}
-            </li>
-          ))}
-        </ul>
-      )}
+<EmployeeList employees={employees} />
     </div>
   );
 }
