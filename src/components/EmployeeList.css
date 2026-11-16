@@ -60,3 +60,61 @@
   display: block;
   margin: 20px auto 0;
 }
+
+.employee-list input[type="text"] {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.employee-list input[type="text"]:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.employee-list button.delete-button {
+  background-color: #dc2626;
+  color: white;
+  margin-left: 10px;
+}
+
+.employee-list button.delete-button:hover {
+  background-color: #b91c1c;
+}
+
+/* Edit Employee Form */
+
+.employee-details form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.employee-details form label {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.employee-details form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.employee-details form input:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.employee-details form button {
+  width: fit-content;
+  min-width: 130px;
+  margin: 10px auto 0;
+}
